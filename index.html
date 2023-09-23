@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>My Portfolio</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+
+  </head>
+
+  <body>
+
+<!-- LIVE WALLPAPERS -->
+
+    <div class="wallpaper">
+      <video autoplay loop muted>
+        <source src="assets/wallpaper.mp4" type="video/mp4">
+      </video>
+    </div>
+
+<!--MOBILE NAV-->
+
+    <nav id="hamburger-nav">
+      <div class="logo">LG.</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+<!--DESKTOP NAV-->
+
+    <nav id="desktop-nav">
+      <div class="logo">LG.</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+<!--PROFILE-->
+
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Lennand profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I am</p>
+        <h1 class="title">Lennand Gabriel</h1>
+        <p class="section__text__p2">Your Fullstack Developer.</p>
+
+        <!--PROFILE BUTTONS-->
+
+        <div class="btn-container">
+          <button class="btn btn-color-2" onclick="window.open('#')">Download CV</button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+        </div>
+
+        <!--PROFILE SOCIALS-->
+
+        <div id="socials-container">
+          <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" onclick="location.href='#'" />
+          <img src="./assets/github.png" alt="My Github profile" class="icon" onclick="location.href='#'" />
+        </div>
+
+      </div>
+    </section>
+
+<!--ABOUT-->
+
+    <section id="about">
+      <p class="section__text__p1">Dive In And Find Out</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img src="./assets/about-pic.gif" alt="Kendo" class="about-pic" />
+        </div>
+
+        <!--ABOUT EXPERIENCE-->
+
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img src="./assets/experience.gif" alt="Experience icon" class="icon" />
+              <h3>Experience</h3>
+              <p>X+ years <br />Fullstack Development</p>
+            </div>
+
+            <!--ABOUT EDUCATION-->
+
+            <div class="details-container">
+              <img src="./assets/education.gif" alt="Education icon" class="icon" />
+              <h3>Education</h3>
+              <p>KodeGo<br />Bootcamp Graduate</p>
+            </div>
+          </div>
+
+          <!--ABOUT DESCRIPTION-->
+
+          <div class="text-container">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
+              reprehenderit et laborum, rem, dolore eum quod voluptate
+              exercitationem nobis, nihil esse debitis maxime facere minus sint
+              delectus velit in eos quo officiis explicabo deleniti dignissimos.
+              Eligendi illum libero dolorum cum laboriosam corrupti quidem,
+              reiciendis ea magnam? Nulla, impedit fuga!
+            </p>
+
+          </div>
+        </div>
+      </div>
+
+      <!--ABOUT CHEVRON-->
+
+      <img
+        src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+
+    </section>
+
+<!--EXPERIENCE-->
+
+    <section id="experience">
+      <p class="section__text__p1">Gain Insight Into My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+
+            <!--EXPERIENCE FRONTEND-->
+
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/HTML.gif" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Lorem, ipsum.</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/CSS.gif" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Lorem, ipsum.</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/JS.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Lorem, ipsum.</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/ux.gif" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Lorem</h3>
+                  <p>Lorem, ipsum.</p>
+                </div>
+              </article>
+              <article>
+                <img  src="./assets/ui.gif" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Ipsum</h3>
+                  <p>Lorem, ipsum.</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/safeguard.gif" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Dolor</h3>
+                  <p>Lorem, ipsum.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <!--EXPERIENCE BACKEND-->
+
+          <div class="details-container">
+            <h2 class="experience-sub-title">Backend Development</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/cloud.gif" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Sit</h3>
+                  <p>Lorem, ipsum.</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/cloud2.gif" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Amet</h3>
+                  <p>Lorem, ipsum.</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/cloud3.gif" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Consectetur</h3>
+                  <p>Lorem, ipsum.</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/maintenance.gif" alt="Experience icon" class="icon"
+                />
+                <div>
+                  <h3>Adipisicing</h3>
+                  <p>Lorem, ipsum.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--EXPERIENCE CHEVRON-->
+
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+
+    </section>
+
+<!--PROJECTS-->
+
+    <section id="projects">
+      <p class="section__text__p1">Take A Look At My</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/project-1.png" alt="Project 1" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Quote Automator</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='#'">Github</button>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='#'">Test Website</button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/project-2.png" alt="Project 2" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Order Submission Portal <br /> (Mobile Friendly)</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='#'">Github</button>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='#'">Test Website</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--PROJECTS CHEVRON-->
+
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+
+    </section>
+
+<!--CONTACT-->
+
+    <section id="contact">
+      <p class="section__text__p1">Don't Hesitate To</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+          <p><a href="#">lgdlacsam@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img src="./assets/linkedin.png" alt="LinkedIn icon"
+            class="icon contact-icon" />
+          <p><a href="#">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+
+<!--FOOTER-->
+
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="footer-logo">
+        <h1>LG.</h1>
+      </div>
+      <div class="footer-rights">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, expedita.</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+
+  </body>
+</html>
